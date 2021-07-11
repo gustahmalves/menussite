@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body, ul, li, p{
+
+    list-style-type: none;
+    font-size: 20px;
+    
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    background-color: #1d1e1f;
+    padding: 5px;
+    width: 100%;
+  
+
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    padding: 25px;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: tomato;
+}
+
+/* SECOND MENU */
+
+.aside{
+    background: #1d1e1f;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding: 25px 20px;
+}
+.aside a{
+    text-decoration: none;
+    color: white;
+}
+.menu2 li{
+    padding: 20px;
+}
+.menu2 li:hover{
+    background: tomato;    
+}
+
+/* THIRD MENU */
+
+.aside2{
+    background: #1d1e1f;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    padding: 25px 20px;
+}   
+.aside2 a{
+    text-decoration: none;
+    color: white;
+}
+.menu3 li{
+    padding: 20px;
+}
+.menu3 li:hover{
+    background: tomato;
+}
+
+/* SECTION TEXT */
+
+.sectiontxt{
+    text-align: center;
+    margin: 25px;
+   
+
+}
+.divtxtmiddle{
+    
+    width: 81%;
+    
+    margin: 150px auto;
+
+    
+}
+/* GRID */
+.grid img{
+    width: 220px;
+    height: 200px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+.divgrid{
+    display: grid;
+  
+}
+.divgrid img{
+    background: rgba(0 ,0 ,0 ,0.6);
+    padding: 10px;
+
+}
+
+.divgrid p{
+    text-transform: uppercase;
+    padding: 10px;
+
+
+}
+
+
+
+/* MEDIA QUERY*/
+
+@media (max-width:470px){
+
+.header{
+    overflow: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+
+
+}
